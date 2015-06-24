@@ -31,9 +31,7 @@
                         <li>
                             <a href="<?php echo base_url('dashboard/theme'); ?>"><i class="fa fa-table fa-fw"></i> View Themes</a>
                         </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
+                        
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Order<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -48,44 +46,62 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Customer<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Second Level Item</a>
+                                    <a href="#">View Customer</a>
+                                </li>
+                            </li>
+                        </ul>
+                                
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Developer<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">View Developer</a>
                                 </li>
                                 <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
+                                    <a href="login.html">Add Developer</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>Reports<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="blank.html">Blank Page</a>
+                                    <a href="blank.html">All Theme Sold</a>
                                 </li>
                                 <li>
-                                    <a href="login.html">Login Page</a>
+                                    <a href="login.html">Themes Per Month</a>
                                 </li>
+                                <li>
+                                    <a href="blank.html">Themes Per Year</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Income Per Month</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Income per Year</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                         <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>Admin <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">View Users</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Add Users</a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">Profile</a>
+                                </li>
+                                
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
