@@ -8,6 +8,7 @@
         <meta name="author" content="">
 
         <!-- Le styles -->
+
         <link href="<?php echo base_url('assets/dev/css/bootstrap-cerulean.css'); ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/dev/css/bootstrap-responsive.css'); ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/dev/css/style.css'); ?>" rel="stylesheet">
@@ -40,10 +41,13 @@
                     </ul>
 
                     <div class="content well">
+                          <div class="row-fluid">
                         
                         <?php echo $content; ?>
 
                     </div>
+                     </div>
+
                 </div>
             </div>
         </div>

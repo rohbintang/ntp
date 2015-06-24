@@ -33,22 +33,7 @@
             </div>
         </div>
 
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                <a class="accordion-toggle sidebar-menu" data-toggle="collapse" data-parent="#sidebar" href="#customer">
-                    <i class="icon-user"></i> Customer
-                </a>
-            </div>
-            <div id="customer" class="accordion-body collapse <?php if ($this->uri->segment(2)=='customer') echo 'in'; ?>">
-                <div class="accordion-inner">
-                    <ul class="nav nav-list">
-                        <li <?php if ($this->uri->segment(2)=='customer' AND $this->uri->segment(3)=='view') echo 'class="active"'; ?>><a href="<?php echo base_url('developer/customer/view'); ?>">View Customers</a></li>
-                        <!-- <li <?php if ($this->uri->segment(2)=='customer' AND $this->uri->segment(3)=='add') echo 'class="active"'; ?>><a href="<?php echo base_url('developer/package/add'); ?>">Add User</a></li> -->
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
+      
 		
         <div class="accordion-group">
             <div class="accordion-heading">

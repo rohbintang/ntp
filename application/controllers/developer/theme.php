@@ -155,6 +155,15 @@ class Theme extends CI_Controller {
                     'theme_price' => $this->input->post('price'),
 					'theme_images' => $image,
                     'theme_files' => $uploadData['file_name'],
+                    'theme_category'=>$this->input->post('cat'),
+                    'theme_resolution'=>$this->input->post('resolution'),
+                    'theme_widget'=>$this->input->post('widget'),
+                    'theme_compatibility'=>$this->input->post('compt'),
+                    'theme_framework'=>$this->input->post('framework'),
+                    'theme_wp_version'=>$this->input->post('wpver'),
+                    'theme_column'=>$this->input->post('column'),
+                    'theme_layout'=>$this->input->post('layout'),
+                    'theme_demo_url'=>$this->input->post('demo'),
                     'developer_id' => $this->session->userdata('developer_id')
                 );
                 $this->theme_model->add($data);

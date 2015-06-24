@@ -7,18 +7,18 @@
         <div class="contact-form span7">
             <?php foreach ($getone as $value) : ?>
             <?php echo form_open('cart/tambah'); ?>
-            <h1><?php echo $value->theme_name; ?></h1>
+            <h4><?php echo $value->theme_name; ?></h4>
             <input type="hidden" name="nama" value="<?php echo $value->theme_name; ?>">
              <input type="hidden" name="harga" value="<?php echo $value->theme_price; ?>">
               <input type="hidden" name="id" value="<?php echo $value->theme_id; ?>">
-            <img class="center img-rounded" src="<?php echo base_url('themes/images/'.$value->theme_images)?>" width="500px">
+            <img class="center img-rounded" src="<?php echo base_url('themes/images/'.$value->theme_images)?>" width="700px">
             <div>&nbsp;</div>
 			<a class="btn btn-large btn-block btn-primary" href="<?php echo base_url('theme/buy/'.$value->theme_id); ?>">Beli</a>
-            <a class="btn btn-large btn-block btn-primary" type="button">Screenshoot</a>
+            <a class="btn btn-large btn-block btn-primary" href="<?php echo base_url('theme/buy/'.$value->theme_id); ?>">Screenshoot</a>
             <legend>Description</legend>
            <p align="justify"> <?php echo $value->theme_description; ?></p>
             <legend>Fitur</legend>
-            <p align="justify"><?php echo $value->theme_tags; ?></p></p>
+            
             <?php echo form_close(); ?>
             <?php endforeach; ?>
         </div>
