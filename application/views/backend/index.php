@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>NTP | Dashboard</title>
-
-    <!-- Bootstrap Core CSS -->
-    
-    <link href="<?php echo base_url('assets/backend/bower_components/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="<?php echo base_url('assets/backend/bower_components/metisMenu/dist/metisMenu.min.css'); ?>" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="<?php echo base_url('assets/backend/dist/css/timeline.css'); ?>" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="<?php echo base_url('assets/backend/dist/css/sb-admin-2.css'); ?>" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="<?php echo base_url('assets/backend/bower_components/morrisjs/morris.css'); ?>" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="<?php echo base_url('assets/backend/bower_components/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
- <link href="<?php echo base_url('assets/backend/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/backend/bower_components/datatables-responsive/css/dataTables.responsive.css'); ?>" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body>
-        <?php echo $header; ?>
+        <!-- Le styles -->
+        <link href="<?php echo base_url('assets/backend/css/bootstrap-cerulean.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/backend/css/bootstrap-responsive.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/backend/css/style.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/backend/css/datepicker.css'); ?>" rel="stylesheet">
         
+        <script src="<?php echo base_url('assets/backend/js/jquery.js') ?>"></script>
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="<?php echo base_url('js/html5shiv.js') ?>"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="<?php echo base_url('assets/backend/ico/favicon.png') ?>">
+    </head>
+
+    <body>
+        <?php echo $header; ?>
+        <div class="container-fluid" style="margin-top: 30px;">
+            <div class="row-fluid">
                 <?php echo $sidebar; ?>
-                <div id="page-wrapper">
-                </br>
-                        <ul class="breadcrumb">
+                <div class="span9">
+                    <!--<h3 style="margin-top: 0px;"><?php echo $title ?></h3>-->
+                    <!--<ul class="breadcrumb">
+                        <li><a href="#">Home</a> <span class="divider">/</span></li>
+                        <li><a href="#">Library</a> <span class="divider">/</span></li>
+                        <li class="active">Data</li>
+                    </ul>-->
+                    <ul class="breadcrumb">
                         <?php echo breadcrumb(); ?>
                     </ul>
+
+                    <div class="content well">
+                        
                         <?php echo $content; ?>
 
-                    <!-- jQuery -->
-    <script src="<?php echo base_url('assets/backend/bower_components/jquery/dist/jquery.min.js'); ?>"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<?php echo base_url('assets/backend/bower_components/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-transition.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-alert.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-modal.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-dropdown.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-scrollspy.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-tab.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-tooltip.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-popover.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-button.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-collapse.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-carousel.js') ?>"></script>
+        <script src="<?php echo base_url('assets/backend/js/bootstrap-typeahead.js') ?>"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="<?php echo base_url('assets/backend/bower_components/metisMenu/dist/metisMenu.min.js'); ?>"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="<?php echo base_url('assets/backend/bower_components/raphael/raphael-min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/backend/bower_components/morrisjs/morris.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/backend/js/morris-data.js'); ?>"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="<?php echo base_url('assets/backend/dist/js/sb-admin-2.js'); ?>"></script>
-
-</body>
-
+    </body>
 </html>

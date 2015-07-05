@@ -40,7 +40,7 @@ class Cart extends CI_Controller {
     	$order_id = 'OR'.$this->session->userdata('customer_id').$today['yday'].$today['hours'].$today['minutes'].$today['seconds'];
     	$data = array(
         		'order_id'	=> $order_id,
-        		'customer_id' =>  $this->session->userdata('customer_id'),
+        		'customer_id' =>  1,
         		// 'theme_id' =>  $items['id'],
     			'payment_id' =>  $payment_id,
         		'order_date' =>  date('Y-m-d')

@@ -24,7 +24,12 @@ class Template {
         $data['sidebar'] = $this->CI->load->view('developer/sidebar', $data, true);
         $this->CI->load->view('developer/index.php', $data);
     }
-    
+    public function customer($content, $data = null) {
+        $data['content'] = $this->CI->load->view('customer/'.$content, $data, true);
+        $data['header'] = $this->CI->load->view('customer/header', $data, true);
+        $data['sidebar'] = $this->CI->load->view('customer/sidebar', $data, true);
+        $this->CI->load->view('customer/index.php', $data);
+    }
     
     public function frontend($content, $data = null) {
         $data['content'] = $this->CI->load->view('frontend/'.$content, $data, true);

@@ -42,9 +42,12 @@ $route['default_controller'] = "frontend/home";
 $route['dashboard'] = "backend/home";
 $route['dashboard/(:any)'] = "backend/$1";
 $route['developer'] = "developer/home";
+
 // $route['developer/auth'] = "developer/authdev";
 $route['developer/(:any)'] = "developer/$1";
 //$route['dashboard/user/view/(:num)'] = "backend/user/view/$1";
+$route['customer'] = "customer/home";
+$route['customer/(:any)'] = "customer/$1";
 $route['(:any)'] = "frontend/$1";
 $route['404_override'] = '';
 

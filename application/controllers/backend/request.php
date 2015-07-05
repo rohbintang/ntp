@@ -79,33 +79,4 @@ class Request extends CI_Controller {
         }
     }
 
-
-    public function rejected() {
-
-        $config['base_url'] = base_url('dashboard/request/rejected');
-       $config['per_page'] = 5;
-        $value = $config['per_page'];
-        $page = ($this->uri->segment(4)) ? (int) $this->uri->segment(4) : 1;
-        $offset = ($page - 1) * $value;
-        if ($this->input->post()) {
-            $keyword = $this->input->post('keyword');
-            $field = 'user_' . $this->input->post('field');
-            $config['total_rows'] = $this->request_model->count($keyword, $field, 0);
-            $data['requests'] = $this->request_model->rejected($keyword, $field, $value, $offset, 0);
-        } else {
-            $config['total_rows'] = $this->request_model->count(NULL, NULL, 0);
-            $data['requests'] = $this->request_model->rejected(NULL, NULL, $value, $offset, 0);
-        }
-        $this->pagination->initialize($config); //Some config in application/config/pagination.php
-        $data['pagination'] = $this->pagination->create_links();
-
-        //Title
-        $data['title'] = 'View Requests';
-
-        //Template
-        $this->template->backend('rejected', $data);
-
-    }
-
-
 }

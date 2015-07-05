@@ -21,7 +21,7 @@ class Payment extends CI_Controller {
 
         //Pagination
         $config['base_url'] = base_url('dashboard/payment/view/');
-        $config['per_page'] = 25;
+        $config['per_page'] = 5;
         $value = $config['per_page'];
         $page = ($this->uri->segment(4)) ? (int) $this->uri->segment(4) : 1;
         $offset = ($page - 1) * $value;

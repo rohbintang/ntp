@@ -4,8 +4,7 @@
 
 <div class="row">
         <div class="portfolio-navigator span12">
-            <h4 class="filter-portfolio">
-                <a class="all" id="active-imgs" href="#">All Theme</a>
+            <h4>THEMES GALERY
             </h4>
             
         </div>
@@ -24,8 +23,7 @@
                     <h4><?php echo $value->theme_name; ?></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
                     <div class="icon-awesome">
-                        <a href="assets/img/portfolio/work1.jpg" rel="prettyPhoto"><i class="icon-search"></i></a>
-                        <a href="<?php echo base_url('theme/detail/'.$value->theme_id); ?>"><i class="icon-link"></i></a>
+                        
                     </div>
  
                 </div>

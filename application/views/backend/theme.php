@@ -1,9 +1,16 @@
-   <div class="row">
-           
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="dataTable_wrapper">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+    <div class="row-fluid">
+    <p class="lead pull-left"><?php echo $title ?></p>
+    <!-- <form class="form-search pull-right" method="post" action="<?php echo base_url('dashboard/user/view'); ?>">
+        <input name="keyword" type="text" class="input-medium">
+        <select name="field" class="input-small">
+            <option value="username">Theme</option>
+            <option value="name">Developer</option>
+            <option value="email">Categories</option>
+        </select>
+        <button type="submit" class="btn">Search</button>
+    </form> -->
+</div>
+<table class="table table-striped">
     <thead>
         <tr>
             <th style="width: 10%;">ID</th>

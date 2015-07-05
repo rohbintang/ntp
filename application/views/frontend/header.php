@@ -24,7 +24,7 @@
                             </li>
                             <li>
                                 <?php $this->session->userdata('customer_uname')?$account=$this->session->userdata('customer_uname'):$account='Login'; ?>
-                                <a href="<?php echo base_url('user'); ?>"><?php echo $account; ?></a>
+                                <a href="<?php echo base_url('customer'); ?>"><?php echo $account; ?></a>
                             </li>
 
                             

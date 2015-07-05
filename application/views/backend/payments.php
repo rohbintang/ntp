@@ -1,9 +1,16 @@
- <div class="row">
-           
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="dataTable_wrapper">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+<div class="row-fluid">
+    <p class="lead pull-left"><?php echo $title ?></p>
+    <!-- <form class="form-search pull-right" method="post" action="<?php echo base_url('dashboard/payment/view'); ?>">
+        <input name="keyword" type="text" class="input-medium">
+        <select name="field" class="input-small">
+            <option value="approval_id">Payment ID</option>
+            <option value="request_id">Order ID</option>
+            <option value="name">Name</option>
+        </select>
+        <button type="submit" class="btn">Search</button>
+    </form> -->
+</div>
+<table class="table table-striped">
     <thead>
         <tr>
             <th>Payment ID</th>

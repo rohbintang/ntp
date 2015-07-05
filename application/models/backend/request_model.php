@@ -92,20 +92,5 @@ class Request_model extends CI_Model {
     //     $this->db->where('nm_requests.approval_date <=', $end);
     //     return $this->db->get();
     // }
-     function rejected($keyword, $field, $value, $offset) {
-        $this->db->select('*');
-        $this->db->from('nm_requests');
-        // $this->db->join('nm_developers', 'nm_requests.developer_id=nm_developers.developer_id');
-        // $this->db->join('nm_packages', 'nm_requests.package_id=nm_packages.package_id');
-        $this->db->join('nm_theme', 'nm_requests.theme_id=nm_theme.theme_id');
-        $this->db->join('nm_developers', 'nm_theme.developer_id=nm_developers.developer_id');
-        $this->db->join('nm_approvals', 'nm_approvals.request_id=nm_requests.request_id');
-        $this->db->where('nm_approvals.approval_status =', 2);
-        $this->db->limit($value, $offset);
-        if ($keyword != NULL) {
-            $this->db->like($field, $keyword);
-        }
-        return $this->db->get();
-    }
 
 }
