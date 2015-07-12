@@ -76,12 +76,12 @@ class Order_model extends CI_Model {
     function report($start, $end) {
         //return $query = $this->db->query("SELECT * FROM `nm_requests` WHERE `approval_date` BETWEEN '$start' AND '$end'");
         $this->db->select('*');
-        $this->db->from('nm_requests');
-        $this->db->join('nm_developers', 'nm_developers.developer_id=nm_requests.developer_id');
-        $this->db->join('nm_approvals', 'nm_approvals.approval_id=nm_requests.approval_id');
-        $this->db->join('nm_packages', 'nm_packages.package_id=nm_requests.package_id');
-        $this->db->where('nm_requests.approval_date >=', $start);
-        $this->db->where('nm_requests.approval_date <=', $end);
+        $this->db->from('nm_orders');
+        //$this->db->join('nm_developers', 'nm_developers.developer_id=nm_orders.developer_id');
+       // $this->db->join('nm_approvals', 'nm_approvals.approval_id=nm_reque.approval_id');
+        //$this->db->join('nm_packages', 'nm_packages.package_id=nm_requests.package_id');
+        $this->db->where('nm_orders.order_date >=', $start);
+        $this->db->where('nm_orders.order_date <=', $end);
         return $this->db->get();
     }
 

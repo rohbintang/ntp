@@ -24,7 +24,7 @@
                 <div class="accordion-inner">
                     <ul class="nav nav-list">
                         <li <?php if ($this->uri->segment(2)=='request' AND $this->uri->segment(3)=='view') echo 'class="active"'; ?>><a href="<?php echo base_url('dashboard/request'); ?>">View Requests<span class="label label-info pull-right">+1</span></a></li>
-                         <li <?php if ($this->uri->segment(2)=='payment' AND $this->uri->segment(3)=='view') echo 'class="active"'; ?>><a href="<?php echo base_url('dashboard/approval'); ?>">Unaprove Request</a></li>
+                         <li <?php if ($this->uri->segment(2)=='payment' AND $this->uri->segment(3)=='view') echo 'class="active"'; ?>><a href="<?php echo base_url('dashboard/request/rejected'); ?>">Rejected Request</a></li>
                         <li <?php if ($this->uri->segment(2)=='order' AND $this->uri->segment(3)=='export') echo 'class="active"'; ?>><a href="<?php echo base_url('dashboard/order/export'); ?>">Export</a></li> 
                     </ul>
                 </div>

@@ -31,5 +31,9 @@ public function show($table){
  function add($data) {
         return $this->db->insert('nm_customers', $data);
     }
+
+     function adddev($data) {
+        return $this->db->insert('nm_developers', $data);
+    }
  
 }

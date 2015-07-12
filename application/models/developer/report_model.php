@@ -76,4 +76,12 @@ class Report_model extends CI_Model {
 		return $data;
 	}
 
+public function get_dev($id,$field){
+		$this->db->where('developer_id',$id);
+        $dev = $this->db->get('nm_developers');
+		foreach($dev->result() as $item);
+		return $item->$field;
+	}
+
 }
+
